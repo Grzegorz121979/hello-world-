@@ -1,4 +1,4 @@
 hour = float(input('Enter hour: '))
 rate = float(input('Enter rate: '))
-pay = round((hour * rate), 2)
-print(f'Your salary is ${pay}')
+pay = hour * rate
+print(f'Your salary is ${round(pay, 2)}')
