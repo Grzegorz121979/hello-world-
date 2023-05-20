@@ -1,10 +1,5 @@
-def calculate_salary(h, r):
-    return round((h* r), 2)
+hour = float(input('Enter your hour: '))
+rate = float(input('Enter your rate per hour: '))
+pay = round((hour * rate), 2)
 
-
-hour = float(input('Enter hour: '))
-rate = float(input('Enter rate: '))
-
-pay = calculate_salary(hour, rate)
-
-print(f'Your salary is ${pay}')
+print(f'Your salary is: {pay}zł')
