@@ -1,5 +1,6 @@
 hour = float(input('Enter your hour: '))
 rate = float(input('Enter your rate per hour: '))
-pay = round((hour * rate), 2)
+tax = (hour * rate) * (22 / 100)
+pay = (hour * rate) - tax
 
-print(f'Your salary is: {pay}zł')
+print(f'Your salary per week is: {round(pay, 2)}zł')
